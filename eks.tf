@@ -1,7 +1,6 @@
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
   version = "19.10.0"
-
   cluster_name    = var.cluster_name
   cluster_version = "1.24"
 
@@ -33,6 +32,8 @@ module "eks" {
 
 
   }
+
+  
 
  # node_security_group_additional_rules = {
 

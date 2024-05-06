@@ -1,5 +1,5 @@
 provider "aws" {
-  region = var.region
+  region = var.aws_region
 }
 
 provider "helm" {
@@ -45,4 +45,5 @@ terraform {
   }
 
   required_version = "~> 1.0"
+  
 }
